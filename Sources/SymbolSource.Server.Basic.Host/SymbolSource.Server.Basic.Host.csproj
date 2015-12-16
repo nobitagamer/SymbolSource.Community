@@ -14,7 +14,7 @@
     <RootNamespace>SymbolSource.Server.Basic.Host</RootNamespace>
     <AssemblyName>SymbolSource.Server.Basic.Host</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\Sources\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <FileUpgradeFlags>
@@ -49,8 +49,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elmah, Version=1.2.13605.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\elmah.corelibrary.1.2\lib\Elmah.dll</HintPath>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Glimpse.Core, Version=0.86.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -118,13 +118,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="App_Readme\glimpse.elmah.readme.txt" />
     <Content Include="App_Readme\glimpse.log4net.readme.txt" />
     <Content Include="App_Readme\glimpse.mvc3.readme.txt" />
     <Content Include="App_Readme\glimpse.readme.txt" />
     <Content Include="Views\Home\Diagnostics.cshtml" />
     <None Include="Properties\PublishProfiles\symsrv.pubxml" />
-    <None Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="favicon.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config">
@@ -158,7 +159,7 @@
     <Content Include="Index\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\Web.config" />
+    <Content Include="Views\Web.config" />
     <None Include="Web.config.transform" />
   </ItemGroup>
   <ItemGroup>
@@ -182,7 +183,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>25412</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:25412/</IISUrl>
+          <IISUrl>http://localhost/SymbolSource.Server.Basic.Host</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
