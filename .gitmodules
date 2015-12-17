@@ -1,0 +1,3 @@
+[submodule "Dependencies/AlphaFS"]
+	path = Dependencies/AlphaFS
+	url = https://github.com/alphaleonis/AlphaFS.git

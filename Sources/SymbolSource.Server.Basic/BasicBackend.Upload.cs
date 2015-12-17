@@ -6,8 +6,8 @@ using Ionic.Zip;
 using SymbolSource.Processing.Basic;
 using SymbolSource.Processing.Basic.Projects;
 using SymbolSource.Server.Management.Client;
-using File = Delimon.Win32.IO.File;
-using Directory = Delimon.Win32.IO.Directory;
+using File = Alphaleonis.Win32.Filesystem.File;
+using Directory = Alphaleonis.Win32.Filesystem.Directory;
 
 namespace SymbolSource.Server.Basic
 {
